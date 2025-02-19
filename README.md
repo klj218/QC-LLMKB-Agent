@@ -2,11 +2,11 @@
 
 ## 项目简介
 
-QC-LLMKB-Agent 是一个基于 Python 的数据流 API 服务，主要用于实时获取并转发腾讯接口返回的流式数据。项目通过调用腾讯提供的接口，将流数据逐行返回给前端或其他客户端，适用于需要长时间保持连接、实时更新数据的场景。此外，本项目使用 Gunicorn 部署，支持生产环境下高并发访问，同时通过合理的超时设置和反向代理方案（如 Nginx）保障稳定性。
+QC-LLMKB-Agent 是一个基于 Python 的数据流 API 服务，主要用于实时获取并转发腾讯接口返回的流式数据。项目通过调用腾讯大模型知识引擎的接口，将流数据逐行返回给前端或其他支持OpenAI接口标准的客户端。
 
 ## 技术栈
 
-- Python 3.11
+- Python 3
 - Flask / Werkzeug（或 WSGI 框架，根据你的项目实际选择）
 - Requests / Urllib3（用于 HTTP 流式请求）
 - Gunicorn（用于生产环境部署）
@@ -35,7 +35,7 @@ QC-DS-API/
    建议使用 Python 自带的 venv 工具：
 
    ```bash
-   python3.11 -m venv venv
+   python -m venv venv
    source venv/bin/activate   # Linux 或 macOS
    # Windows: venv\Scripts\activate
    ```
