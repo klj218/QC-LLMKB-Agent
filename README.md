@@ -75,7 +75,6 @@ if __name__ == '__main__':
 python app.py
 ```
 
-然后在浏览器中访问 `http://localhost:8000/stream`（或其他 API 路径）即可。
 
 ### 2. 生产环境运行
 
